@@ -1,0 +1,47 @@
+
+    <!--  -->
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
+    <style> *{
+        margin: 0 auto;
+    }
+    .container_login{
+        margin: 0 auto;
+        margin-top:  30ch;
+        text-align: center;
+        border-radius: 2px solid #000;
+    }
+    .container_login .content_form{
+        height: 200px;
+        width: 400px;
+        background-image: linear-gradient(180deg, rgba(33, 188, 180), rgba(221, 137, 19, 0.759));
+        border: 2px solid #000;
+    }
+    /* btn login */
+    .content_form .btn_login{
+        margin: 15px;
+        margin-right: -150px;
+        padding: 10px 20px;
+    }
+    .btn_login .btn_login:hover{
+        background-color: burlywood;
+        color: green;
+    }
+    </style>
+    <title>Login | {{title}}</title>
+    <div class="container container_login">
+        {{!-- <div class="message">
+            {{mess}}
+        </div> --}}
+        <div class="content_form">
+            <h1 style="border-bottom: 1px solid; max-width: 190px ">Login form</h1> <br/>
+            <form action="/admin/login" method="post">
+                <label for="usename" >Username:</label>
+            <input type="text" id="usename" name="username" placeholder="Enter username:"> <br> <br>
+            <label for="password" >Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password:">
+            <br/>
+            <button class="btn_login" type="submit">Login</button>
+            
+            </form>
+        </div>
+    </div>

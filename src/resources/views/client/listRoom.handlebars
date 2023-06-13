@@ -1,0 +1,62 @@
+<style>
+    .title_page {
+        text-align: center;
+    }
+    .css__image__card{
+        height: 150px;
+        width: 90%;
+        margin: 0 auto;
+    }
+</style>
+<div class="title_page">
+    <h1>Page List Room | Booking the seminar hall</h1>
+</div>
+<br>
+<div class="mt-4">
+    <div class="row">
+
+        {{!-- {{#each data}} --}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card" style="width: 18rem; margin-top: 20px;">
+                <a href="#">
+                    <img src="http://localhost:8000/images/booking1.png" class="card-img-top  css__image__card" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Name Room: {{this.username}}</h5>
+                    <p class="card-text">Describe: {{this.password}} </p>
+                    <p class="card-text">status: {{this.password}} </p>
+                    <a href="#" class="btn btn-primary">Watch: {{this.id}} </a>
+                </div>
+            </div>
+        </div>
+        {{!-- {{/each}} --}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card" style="width: 18rem; margin-top: 20px;">
+                <a href="#">
+                    <img src="http://localhost:8000/images/booking1.png" class="card-img-top css__image__card" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Name Room: {{this.username}}</h5>
+                    <p class="card-text">Describe: {{this.password}} </p>
+                    <p class="card-text">status: {{this.password}} </p>
+                    <a href="#" class="btn btn-primary">Watch: {{this.id}} </a>
+                </div>
+            </div>
+        </div>
+        {{!-- --}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card" style="width: 18rem; margin-top: 20px;">
+                <a href="#">
+                    <img src="http://localhost:8000/images/booking1.png" class="card-img-top  css__image__card" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Name Room: {{this.username}}</h5>
+                    <p class="card-text">Describe: {{this.password}} </p>
+                    <p class="card-text">status: {{this.password}} </p>
+                    <a href="#" class="btn btn-primary">Watch: {{this.id}} </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

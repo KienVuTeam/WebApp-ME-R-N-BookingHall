@@ -1,0 +1,22 @@
+<h1>{{title}} </h1>
+
+<div class="mt-4">
+    <div class="row">
+
+        {{#each data}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card" style="width: 18rem; margin-top: 20px;">
+                <a href="book/{{this.slug}}">
+                <img src="{{this.img}} " class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">user: {{this.username}}</h5>
+                    <p class="card-text">password: {{this.password}} </p>
+                    <a href="#" class="btn btn-primary">id: {{this.id}} </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>

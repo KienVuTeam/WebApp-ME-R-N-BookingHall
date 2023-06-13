@@ -1,0 +1,34 @@
+{{#if success }}
+<div class="alert alert-success" role="alert">
+    {{success}}
+</div>
+{{/if}}
+
+
+
+{{!-- --}}
+<h3>Đăng kí tài khoản:</h3>
+<form action="/admin/register" method="POST">
+
+    <div style="border: 1px solid #000; max-width: 700px; padding: 10px 90px; background-image: linear-gradient(45deg, rgba(33, 188, 180),  rgba(219, 26, 183, 0.759) ); ">
+        <div class="row ">
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="Enter name" name="fullname">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="Enter username " name="username">
+            </div>
+        </div> <br>
+        <div class="row" >
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="Enter password" name="password">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="Enter roles" name="roles">
+            </div>
+        </div> <br>
+        <button type="submit" class="btn btn-primary">
+            Register
+        </button>
+    </div>
+</form>
